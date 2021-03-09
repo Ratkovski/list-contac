@@ -8,9 +8,10 @@ class ContactAdapter : RecyclerView.Adapter<ContactAdapter.ContactAdapterViewHol
     //atributo de classe para armazenar a lista
     private val list:MutableList<Contact> = mutableListOf()
 
-
+//criando a view layout
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ContactAdapterViewHolder {
-        TODO("Not yet implemented")
+    //para inflar dizer que é o arquivo xml que vai mostrar o layout
+       var view = LayoutInflater.from(parent.context).inflate()
     }
 //saber a quantidade de items da lista
     override fun getItemCount(): Int {
