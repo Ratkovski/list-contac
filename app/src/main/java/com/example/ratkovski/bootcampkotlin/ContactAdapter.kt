@@ -1,5 +1,6 @@
 package com.example.ratkovski.bootcampkotlin
 
+import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -11,7 +12,8 @@ class ContactAdapter : RecyclerView.Adapter<ContactAdapter.ContactAdapterViewHol
 //criando a view layout
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ContactAdapterViewHolder {
     //para inflar dizer que é o arquivo xml que vai mostrar o layout
-       var view = LayoutInflater.from(parent.context).inflate()
+       var view = LayoutInflater.from(parent.context).inflate(R.layout.contact_item, parent, false)
+    return ContactAdapterViewHolder(view)
     }
 //saber a quantidade de items da lista
     override fun getItemCount(): Int {
