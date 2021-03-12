@@ -46,10 +46,24 @@ class MainActivity : AppCompatActivity() {
 
                 )
         }
-
+//mostrar menu
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         val inflater: MenuInflater = menuInflater
         inflater.inflate(R.menu.menu, menu)
         return true
+    }
+
+    private fun
+    
+    //capturar click dos items do menu
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+            R.id.item_menu_1=>{
+
+            }
+            R.id.item_menu_2=>{
+
+        }
+            else => super.onOptionsItemSelected(item)
     }
     }
